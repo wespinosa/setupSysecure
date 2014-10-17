@@ -1,0 +1,59 @@
+@import 'nib/gradients'
+@import 'nib/vendor'
+
+vendors-prefixes = o ms moz webkit official
+
+opacity(n)
+  opacity n
+  if support-for-ie
+    filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+input
+    text-transform:uppercase;
+.select2-search
+    z-index: 999999;
+#agregarVisitantesTable
+    display: none
+#datosReporte_pie
+    display:none;
+#encuentraCedula
+    display: none
+#frmVisitasModal .modal-dialog
+    width: 750px;
+#guardarVisitanteNuevo
+    display: none
+#verlugarCedula
+    color: red;
+    font-size: 10em;
+    margin: 0 auto;
+    text-align: center;
+.bootstrap-timepicker-widget
+    z-index: 10000 !important;
+.smart-style-3 #header
+    background-color: #3EA7D1;
+    background-image: linear-gradient(to bottom, #3EA7D1, #058DC7);
+.logo-principal
+    margin: 50px;
+    text-align: center;
+div.dataTables_filter label
+    float: left;
+
+
+
+.header-search > input[type="text"]
+    margin-top: 5px;
+    min-width: 282px;
+
+.header-search > button 
+    top: 5px;
+.search-results + .search-results
+    border-top: 1px dashed #666;
+
+.popover
+    z-index: 99999;
+
+.conPpl
+    cursor: pointer;
+
+@import "index.styl"
+@import "usuarios.styl"
+@import "horarios.styl"
